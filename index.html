@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,22 +13,116 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <div class="main-container">
-        <header></header>
-        <main>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
+<body class="lodge">
+    <wrapper class="main-container">
 
+        <header class="debeug">
+
+            <div class="navbar-app">
+                <img src="images/logo/Booki.png" alt="Logo de l'entreprise Booki" title="Logo de l'entreprise Booki">
+                <nav class="main-nav">
+                    <a href="#">Hébergements</a>
+                    <a href="#">Activités</a>
+                </nav>
+            </div>
+
+            <div class="hero">
+                <p class="hero-content">
+                    Trouvez votre hébergement pour des vacances de rêve
+                    <span class="hero_baseline">En plein centre-ville ou en pleine nature</span>
+                </p>    
+            </div>
+
+            <search-bar class="search-composant" role="'search">
+                <div class="search_tool">
+                    <span class="search_icon"></span>
+                    <input type="search" name="search-city" id="search" placeholder="Your town">
+                    <input type="submit" value="Rechercher" >
+                </div>
+                <div class="search_filters">
+                    <h2>Filtres</h2>
+                    <ul>
+                        <li><a href="#">Economique</a></li>
+                        <li><a href="#">Familial</a></li>
+                        <li><a href="#">Romantique</a></li>
+                        <li><a href="#">Nos pépites</a></li>
+                    </ul>
+                </div>
+                <p class="search_baseline">
+                    <i class="fa-xs fa-solid fa-info" aria-hidden="true"></i>Plus de 500 logements sont disponibles dans cette ville
+                </p>
+            </search-bar>
+
+        </header>
+
+        <main class="debeug">
+            <div class="lodges-availables">
+                <section id="hebergements">
+                    <h2 class="section-title">Hébergements à <span class="hebergements_geoloc">Marseille</span>
+                    </h2>
+                    <item-list class="lodges-cards">
+                        <article class="card card-column">
+                            <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card card-column">
+                            <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card card-column">
+                            <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </item-list>
                 </section>
-                <section class="populaires">
+                <section id="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
                         <a href="#">
-                            <article class="card">
+                            <article class="card card-row">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -48,7 +141,7 @@
                             </article>
                         </a>
                         <a href="#">
-                            <article class="card">
+                            <article class="card card-row">
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -67,7 +160,7 @@
                             </article>
                         </a>
                         <a href="#">
-                            <article class="card">
+                            <article class="card card-row">
                                 <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -87,10 +180,73 @@
                         </a>
                     </div>
                 </section>
+                <section id="activities">
+                    <h2 class="section-title">Activités à <span class="hebergements_geoloc">Marseille</span>
+                    </h2>
+                    <item-list class="activities-cards">
+                        <article class="card card-column">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Activité</h3>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card card-column">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Activité</h3>
+                                </div>
+                                
+                            </div>
+                        </article>
+                        <article class="card card-column">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Activité</h3>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card card-column">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Activité</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </item-list>
+                </section>
             </div>
         </main>
-        <footer></footer>
-    </div>
+
+
+
+        <footer class="main-footer debeug">
+             <nav class="footer-nav" id="about">
+                <h3>A propos</h3>
+                <a href="#">Lien 1</a>
+                <a href="#">Lien 2</a>
+                <a href="#">Lien 3</a>
+            </nav>
+             <nav class="footer-nav" id="lodges">
+                <h3>Nos hébergements</h3>
+                 <a href="#">Lien 1</a>
+                 <a href="#">Lien 2</a>
+                 <a href="#">Lien 3</a>
+                </nav>
+             <nav class="footer-nav" id="assistance">
+                <h3>Assistance</h3>
+                <a href="#">Lien 1</a>
+                <a href="#">Lien 2</a>
+                <a href="#">Lien 3</a>
+            </nav>
+
+        </footer>
+
+    </wrapper>
 </body>
 
 </html>
