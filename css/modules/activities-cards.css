@@ -1,0 +1,14 @@
+.activities-cards {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.activities-cards .card {
+    --paddingCard: 0;
+    width: 22%;
+}
+
+.activities-cards .card-thumbnail {
+    
+}

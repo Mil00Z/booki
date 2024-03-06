@@ -1,3 +1,35 @@
-.overall-card {
-    
+.card {
+    --paddingCard:.4rem;
+    --card-radius:20px;
+    display: flex;
+    padding: var(--paddingCard);
+    background-color: white;
+    border: 1px solid var(--filter-bg-color);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    transition: var(--regTransition);
+}
+
+.card-row {
+    flex-direction: row;
+}
+
+.card-column {
+    flex-direction: column;
+}
+
+.card-content {
+    padding-inline:.8rem;
+}
+
+.card-thumbnail{
+    max-height: 200px;
+    object-fit: cover;
+    border-top-left-radius: calc( (-1) * var(--paddingCard) + var(--card-radius));
+    border-top-right-radius: calc( (-1) * var(--paddingCard) + var(--card-radius));
+}
+
+.card-rating {
+    margin-bottom:.5rem;
 }
