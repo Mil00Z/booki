@@ -1,3 +1,21 @@
+/* COMPOSANT : Cards Overall */
+@import url('../css/modules/overall-cards.css');
+
+/* COMPOSANT : Lodges Cards */
+@import url('../css/modules/lodge-cards.css');
+
+/* COMPOSANT : Activities Cards */
+@import url('../css/modules/activities-cards.css');
+
+/* COMPOSANT : Footer */
+@import url('../css/modules/footer-app.css');
+
+/* COMPOSANT : TITLE Section */
+@import url('../css/modules/title-section.css');
+
+/* COMPOSANT : TITLES Card / Item / Activities */
+@import url('../css/modules/title-card.css');
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -24,6 +42,8 @@
     --title-section-font-weight:600;
     --title-section-line-height:1.3;
 
+    --section-radius:15px;
+    --regTransition:all .25s ease-in-out;
 }
 
 
@@ -83,20 +103,27 @@ a {
 }
 
 .block-data {
-    padding:1.5rem;
+    padding:1.15rem;
+    background:var(--main-bg-color);     
+    border-radius: var(--section-radius);
 }
 
 .lodges-layout{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    row-gap: 4rem;
 }
 
 
 /* Hebergements */
 #hebergements {
-    --gap:3rem;
-      
+    --gap:2rem;
+    width:66%;
+}
+
+.hebergements_geoloc {
+    margin-inline:5px auto;
 }
 
 /* Populaires */
@@ -105,32 +132,11 @@ a {
 }
 
 #activities {
-    width:100%;
+    /* width:100%; */
 }
 
 
-/* COMPOSANT : Cards Overall */
-@import url('../css/modules/overall-cards.css');
 
-
-/* COMPOSANT : Lodges Cards */
-@import url('../css/modules/lodge-card.css');
-
-
-/* COMPOSANT : Activities Cards */
-@import url('../css/modules/activities-card.css');
-
-
-/* COMPOSANT : Footer */
-@import url('../css/modules/footer-app.css');
-
-
-/* COMPOSANT : TITLE Section */
-@import url('../css/modules/title-section.css');
-
-
-/* COMPOSANT : TITLES Card / Item / Activities */
-@import url('../css/modules/title-card.css');
 
 
 
@@ -154,24 +160,36 @@ a {
 }
 
 .populaires-cards .card {
-    display: flex;
+    width: 360px;
     margin-top: 33px;
 }
 
 .populaires-cards img {
-    width: 33%;
+    width: 120px;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: calc( (-1) * var(--paddingCard) + var(--card-radius));
+    border-bottom-left-radius: calc( (-1) * var(--paddingCard) + var(--card-radius));
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0;
 }
 
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.populaires-cards > a {
+    display: inline-block;
+
+}
 .populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
+    padding-left: 1rem;
+
 }
 
 .populaires-cards .card-title {
