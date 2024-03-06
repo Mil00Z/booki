@@ -26,8 +26,8 @@
 
 }
 
-/****** General ***********/
-/* Some resets */
+
+/* RESETS / GENERALS */
 *,
 *::after,
 *::before {
@@ -63,85 +63,18 @@ svg {
     max-width: 100%;;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
 .debeug {
     outline:2px dashed var(--debeug);
 }
 
 
-
-.fa-solid {
-    color: var(--main-color);
-}
-
-
-
-/* Hebergements */
-    #hebergements {
-        --gap:3rem;
-        flex-basis:60%;
-    }
-
-/* Populaires */
-    #populaires {
-        --gap:2rem;
-    }
-
-
-/* COMPOSANT : Lodges Cards */
-.lodges-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap:var(--gap);
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-
-.card-column {
-
-}
-
-.card-row {
-
-}
-
-.card img {
-    object-fit: cover;
-}
-
-
-
-/* COMPOSANT : Activities Cards */
-.activities-cards{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* COMPOSANT : Footer */
-
-.main-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center
-}
-
-
-
-
-
-
+/* LAYOUT */
 .main-container {
     display:block;
     width: 100%;
@@ -149,45 +82,60 @@ svg {
     padding: 0 50px;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.block-data {
+    padding:1.5rem;
 }
+
+.lodges-layout{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+
+/* Hebergements */
+#hebergements {
+    --gap:3rem;
+      
+}
+
+/* Populaires */
+#populaires {
+    --gap:2rem;
+}
+
+#activities {
+    width:100%;
+}
+
+
+/* COMPOSANT : Cards Overall */
+@import url('../css/modules/overall-cards.css');
+
+
+/* COMPOSANT : Lodges Cards */
+@import url('../css/modules/lodge-card.css');
+
+
+/* COMPOSANT : Activities Cards */
+@import url('../css/modules/activities-card.css');
+
+
+/* COMPOSANT : Footer */
+@import url('../css/modules/footer-app.css');
 
 
 /* COMPOSANT : TITLE Section */
-.section-title {
-    margin: 0;
-    font-family: var(--title-section-font);
-    font-size: var(--title-section-font-size);
-    font-weight: var(--title-section-font-weight);
-    line-height: var(--title-section-line-height);
-}
+@import url('../css/modules/title-section.css');
+
 
 /* COMPOSANT : TITLES Card / Item / Activities */
-.card-title {
-    font-family: var(--title-font);
-    font-size: var(--title-font-size);
-    font-weight: var(--title-font-weight);
-    line-height: var(--title-line-height);
-}
+@import url('../css/modules/title-card.css');
 
 
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
 
 /****** Hebergements And Populaires ***********/
-.lodges-availables {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-}
+
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
@@ -240,6 +188,16 @@ a {
 }
 
 
+/* FontAwesome Quick Fix */
+.fa-solid {
+    color: var(--main-color);
+}
+.euro {
+    font-weight: 700;
+}
+.neutral-star {
+    color: var(--main-bg-color)
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

@@ -16,7 +16,7 @@
 <body class="lodge">
     <wrapper class="main-container">
 
-        <header class="debeug">
+        <header class="">
 
             <div class="navbar-app">
                 <img src="images/logo/Booki.png" alt="Logo de l'entreprise Booki" title="Logo de l'entreprise Booki">
@@ -56,8 +56,8 @@
         </header>
 
         <main class="debeug">
-            <div class="lodges-availables">
-                <section id="hebergements">
+            <div class="lodges-layout">
+                <section id="hebergements" class="block-data">
                     <h2 class="section-title">Hébergements à <span class="hebergements_geoloc">Marseille</span>
                     </h2>
                     <item-list class="lodges-cards">
@@ -115,7 +115,7 @@
 
                     </item-list>
                 </section>
-                <section id="populaires">
+                <section id="populaires" class="block-data">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -180,10 +180,10 @@
                         </a>
                     </div>
                 </section>
-                <section id="activities">
+                <section id="activities" class="block-data">
                     <h2 class="section-title">Activités à <span class="hebergements_geoloc">Marseille</span>
                     </h2>
-                    <item-list class="activities-cards">
+                    <item-list class="activities-card">
                         <article class="card card-column">
                             <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
@@ -209,7 +209,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="card card-column">
+                        <article class="card card-column" data-test="acti-1">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -224,7 +224,7 @@
 
 
 
-        <footer class="main-footer debeug">
+        <footer class="main-footer">
              <nav class="footer-nav" id="about">
                 <h3>A propos</h3>
                 <a href="#">Lien 1</a>
