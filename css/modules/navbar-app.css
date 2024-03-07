@@ -1,9 +1,33 @@
-.card {
-    padding:.3rem;
-    overflow: hidden;
-    transition: var(--regTransition);
+.navbar-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-common);
 }
 
-.card:hover {
-    background:var(--main-color);
+.navbar-link {
+    display: inline-block;
+    padding: var(--padding-common) 0;
+    border-top:2px solid transparent;
+    transition:var(--regTransition);
+    
 }
+
+.navbar-link:hover,
+.navbar-link:focus {
+    color:var(--main-color);
+    border-color: currentColor;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    column-gap: calc( 2 * var(--padding-common));
+}
+
+.card {
+    /* padding:.3rem;
+    overflow: hidden;
+    transition: var(--regTransition); */
+}
+
