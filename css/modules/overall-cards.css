@@ -24,7 +24,6 @@
 }
 
 .card-thumbnail{
-    max-height: 200px;
     object-fit: cover;
     border-top-left-radius: calc( (-1) * var(--paddingCard) + var(--card-radius));
     border-top-right-radius: calc( (-1) * var(--paddingCard) + var(--card-radius));

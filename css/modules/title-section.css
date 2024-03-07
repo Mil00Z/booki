@@ -8,3 +8,7 @@
     font-weight: var(--title-section-font-weight);
     line-height: var(--title-section-line-height);
 }
+
+.nav-title {
+    margin-block: 0;
+}
