@@ -18,30 +18,32 @@
 <body class="accueil">
     <wrapper class="main-container">
 
-        <header class="debeug">
+        <header class="">
 
             <div class="navbar-app">
-                <img src="images/logo/Booki.png" alt="Logo de l'entreprise Booki" title="Logo de l'entreprise Booki">
+                <img src="images/logo/Booki.svg" alt="Logo de l'entreprise Booki" title="Logo de l'entreprise Booki" class="logo">
                 <nav class="main-nav">
-                    <a href="#" class="navbar-link">Hébergements</a>
+                    <a href="#" class="navbar-link active">Hébergements</a>
                     <a href="#" class="navbar-link">Activités</a>
                 </nav>
             </div>
 
             <div class="hero">
-                <p class="hero-content">
+                <h1 class="hero-title">
                     Trouvez votre hébergement pour des vacances de rêve
-                    <span class="hero_baseline">En plein centre-ville ou en pleine nature</span>
-                </p>    
+                </h1>    
+                <span class="hero-title_baseline">En plein centre-ville ou en pleine nature</span>
             </div>
 
             <search-bar class="search-composant" role="'search">
-                <div class="search_tool">
-                    <span class="search_icon"></span>
-                    <input type="search" name="search-city" id="search" placeholder="Your town">
-                    <input type="submit" value="Rechercher" >
-                </div>
-                <div class="search_filters">
+                <form class="search-tool">
+                    <label class="search-icon" for="search-entry">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </label>
+                    <input type="search" name="search-city" id="search-entry" class="inputs" placeholder="Hie, Mentor 😎">
+                    <input type="submit" id="search-validate" class="inputs" value="Rechercher" >
+                </form>
+                <div class="search-filters debeug">
                     <h2>Filtres</h2>
                     <ul>
                         <li><a href="#">Economique</a></li>

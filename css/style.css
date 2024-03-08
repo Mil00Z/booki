@@ -1,6 +1,12 @@
 /* COMPOSANT : NavBar App */
 @import url('../css/modules/navbar-app.css');
 
+/* COMPOSANT : Hero */
+@import url('../css/modules/hero.css');
+
+/* COMPOSANT : Search Bar  */
+@import url('../css/modules/searchbar-app.css');
+
 /* COMPOSANT : Cards Overall */
 @import url('../css/modules/overall-cards.css');
 
@@ -219,6 +225,11 @@ a {
 }
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+.fa-solid.fa-location-dot {
+    color:var(--black);
+    font-size:1.25rem;
 }
 
 
