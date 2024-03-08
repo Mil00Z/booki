@@ -2,21 +2,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--padding-common);
+    padding-block: var(--padding-common);
 }
 
 .navbar-link {
     display: inline-block;
-    padding: var(--padding-common) 0;
-    border-top:2px solid transparent;
+    padding: .75rem 0;
+    border-block:2px solid transparent;
     transition:var(--regTransition);
     
 }
 
+.navbar-link.active {
+    color:var(--main-color);
+    border-top-color: currentColor;
+}
+
 .navbar-link:hover,
 .navbar-link:focus {
-    color:var(--main-color);
-    border-color: currentColor;
+    color:var(--debeug);
+    border-bottom-color: currentColor;
 }
 
 .main-nav{
@@ -25,9 +30,7 @@
     column-gap: calc( 2 * var(--padding-common));
 }
 
-.card {
-    /* padding:.3rem;
-    overflow: hidden;
-    transition: var(--regTransition); */
+.logo {
+    
 }
 
