@@ -10,7 +10,7 @@
     font-size:1.125rem;
     font-weight: var(--title-font-weight);
     line-height: var(--title-line-height);
-    border:1px solid currentColor;
+    border:1px solid transparent;
 }
 
 .search-icon {
@@ -22,7 +22,8 @@
     padding:.5rem;
     background:var(--main-bg-color);
     border-color:1px solid var(--main-bg-color);
-    border-radius:var(--section-radius) 0 0 var(--section-radius); 
+    border-radius:var(--section-radius) 0 0 var(--section-radius);
+    transition: var(--regTransition);
 }
 
 /* Inputs Search & Submit  */
@@ -35,6 +36,12 @@
 
 #search-entry::placeholder {
     color:var(--black);
+  
+}
+
+.search-tool:focus-within .search-icon .fa-location-dot {
+    color:var(--main-color);
+    transform: translateY(-4px);
 }
 
 #search-validate {
@@ -43,5 +50,4 @@
     text-align: center;
     border-radius: 0 var(--section-radius) var(--section-radius) 0;
     background-color: var(--main-color);
-
 }

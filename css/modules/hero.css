@@ -1,5 +1,5 @@
 .hero {
-margin-block:2rem;
+margin-block:2rem var(--header-spacing);
 }
 
 .hero-title {

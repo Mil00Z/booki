@@ -17,14 +17,6 @@
     margin-block:0;
 }
 
-.search-baseline {
-    margin-block:0 ;
-}
-
-.search-baseline .fa-info {
-    padding-right:.85rem;
-}
-
 .search-link {
     display: flex;
     justify-content: center;
@@ -43,4 +35,23 @@
 .search-link:hover,
 .search-link.active {
     background:var(--filter-bg-color);
+}
+
+.search-baseline {
+    margin-block:0 ;
+}
+
+.search-baseline .fa-info {
+    padding-right:.85rem;
+}
+
+.search-baseline .fa-info::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem;
+    border: 1px solid var(--filter-bg-color);
+    /* height: .75rem;
+    width: auto; */
+    border-radius: 50px;
 }
