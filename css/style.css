@@ -7,6 +7,9 @@
 /* COMPOSANT : Search Bar  */
 @import url('../css/modules/searchbar-app.css');
 
+/* COMPOSANT : Filters */
+@import url('../css/modules/filters.css');
+
 /* COMPOSANT : Cards Overall */
 @import url('../css/modules/overall-cards.css');
 
@@ -53,6 +56,7 @@
 
     --section-radius:15px;
     --padding-common:1.15rem;
+    --header-spacing:1.5rem;
     --regTransition:all .25s ease-in-out;
 }
 
@@ -145,6 +149,13 @@ a {
     padding:var(--padding-common);
 }
 
+.search-composant {
+    --input-height: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--header-spacing);
+} 
+
 
 
 
@@ -219,6 +230,7 @@ a {
 /* FontAwesome Quick Fix */
 .fa-solid {
     color: var(--main-color);
+    transition: var(--regTransition);
 }
 .euro {
     font-weight: 700;
@@ -226,7 +238,6 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-
 .fa-solid.fa-location-dot {
     color:var(--black);
     font-size:1.25rem;
