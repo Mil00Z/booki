@@ -1,4 +1,5 @@
 .search-filters {
+    --gap:1rem;
     display:flex;
     align-items: center;
     column-gap:1rem;
@@ -7,7 +8,8 @@
 .search-filters-list {
     display:flex;
     align-items: center;
-    column-gap:1rem;
+    flex-wrap: wrap;
+    gap:var(--gap);
     margin:0;
     padding: 0;
     list-style-type: none;
