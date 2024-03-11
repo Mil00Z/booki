@@ -1,0 +1,14 @@
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: .5rem 1rem;
+    font-family: var(--title-section-font);
+    font-size: var(--title-section-font-size);
+    font-weight: var(--title-section-font-weight);
+    line-height: var(--title-section-line-height);
+}
+
+.nav-title {
+    margin-block: 0;
+}

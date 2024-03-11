@@ -1,0 +1,16 @@
+.hero {
+margin-block:2rem var(--header-spacing);
+}
+
+.hero-title {
+    width:fit-content;
+    font-family: var(--title-font);
+    font-size: 1.375rem;
+    font-weight: var(--title-font-weight);
+    line-height: var(--title-line-height);
+    margin-bottom: .5rem;
+}
+
+.hero-title_baseline {
+    
+}
