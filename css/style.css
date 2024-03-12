@@ -279,6 +279,9 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    body {
+        --header-spacing: 2rem;
+    }
 
     .main-container {
         --body-padding:0;
@@ -341,7 +344,7 @@ a {
         border-radius: 15px;
     }
 
-        
+
         #search-validate::after{
             content: "\f002";
             display: flex;
@@ -352,6 +355,58 @@ a {
             
         }
 
+        .search-baseline{
+            display: flex;
+        }
+
+        #populaires {
+            order:1;
+        }
+
+        #hebergements {
+            order:2;
+            background: var(--white);
+        }
+
+        #activities {
+            order:3;
+        }
+
+        .populaires-cards {
+            --gap:1rem;
+        }
+
+        .populaires-cards a,
+        .populaires-cards .card {
+            width:100%;
+        }
+
+        .populaires-cards .card-title {
+            font-size: 1rem;
+        }
+
+        .lodges-cards .card {
+            width:100%;
+        }
+
+        .lodges-cards .card-thumbnail {
+            flex-grow: 1;
+            overflow: hidden;
+            max-height: 145px;
+        }
+
+        .activities-cards {
+            row-gap:1.5rem;
+        }
+
+        .activities-cards .card {
+            width:100%;
+            max-height: 230px;
+        }
+
+        .activities-cards .card-title {
+            margin-block:1rem
+        }
 
 
 }
