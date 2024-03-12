@@ -9,3 +9,10 @@
 }
 
 
+.lodges-cards .card-title {
+    margin-block:.5rem;
+}
+
+.lodges-cards .card-subtitle {
+    margin-block: 0.25rem;
+}
