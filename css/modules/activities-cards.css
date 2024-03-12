@@ -8,9 +8,14 @@
 .activities-cards .card {
     --paddingCard: 0;
     width: 22%;
-    height:440px;
+    height: 380px;
 }
 
 .activities-cards .card-thumbnail {
+    flex-grow:1;
     height: 85%;
+}
+
+.activities-cards .card-title {
+    margin-block: .7rem;
 }

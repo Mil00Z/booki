@@ -1,5 +1,5 @@
 .card {
-    --paddingCard:.4rem;
+    --paddingCard:.3rem;
     --card-radius:20px;
     display: flex;
     padding: var(--paddingCard);
@@ -17,6 +17,7 @@
 
 .card-column {
     flex-direction: column;
+    height:100%;
 }
 
 .card-content {
@@ -30,5 +31,5 @@
 }
 
 .card-rating {
-    margin-bottom:.5rem;
+    margin-bottom:.25rem;
 }
