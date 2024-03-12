@@ -408,5 +408,15 @@ a {
             margin-block:1rem
         }
 
+        .main-footer {
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 3rem;
+        }
+
+        .footer-nav {
+            width: fit-content;
+        }
+
 
 }
