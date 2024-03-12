@@ -16,6 +16,9 @@
 /* COMPOSANT : Lodges Cards */
 @import url('../css/modules/lodge-cards.css');
 
+/* COMPOSANT : Populaires Cards */
+@import url('../css/modules/popular-cards.css');
+
 /* COMPOSANT : Activities Cards */
 @import url('../css/modules/activities-cards.css');
 
@@ -55,7 +58,7 @@
     --title-section-line-height:1.3;
 
     --section-radius:15px;
-    --padding-common:1.4rem;
+    --padding-common:1.2rem;
     --header-spacing:1.5rem;
     --regTransition:all .25s ease-in-out;
 }
@@ -124,7 +127,7 @@ a {
 }
 
 .lodges-layout{
-    --gap:4rem;
+    --gap:2rem;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -132,11 +135,17 @@ a {
     margin-top: 2rem;
 }
 
+.search-composant {
+    --input-height: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--header-spacing);
+} 
 
 /* Hebergements */
 #hebergements {
-    --gap:2rem;
-    /* width:66%; */
+    --gap:1.45rem;
+    width:66%;
 }
 
 .hebergements_geoloc {
@@ -152,86 +161,10 @@ a {
     padding:var(--padding-common);
 }
 
-.search-composant {
-    --input-height: 50px;
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--header-spacing);
-} 
-
-
-
-
 
 
 /****** Hebergements And Populaires ***********/
 
-
-/* .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-} */
-
-
-
-
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.populaires-cards {
-    --gap:33px;
-    display: flex;
-    flex-direction: column;
-    row-gap:var(--gap);
-
-}
-
-.populaires-cards .card {
-    width: 360px;
-}
-
-.populaires-cards img {
-    width: 120px;
-    height: 136px;
-    object-fit:cover;
-    border-top-left-radius: calc( (-1) * var(--paddingCard) + var(--card-radius));
-    border-bottom-left-radius: calc( (-1) * var(--paddingCard) + var(--card-radius));
-    border-top-right-radius: 0;
-    border-bottom-right-radius:0;
-}
-
-
-.populaires-cards > a {
-    display: inline-block;
-
-}
-.populaires-cards .card-content {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 1rem;
-
-}
-
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
-}
 
 
 /* FontAwesome Quick Fix */
@@ -259,7 +192,7 @@ a {
 
    
     .populaires-cards {
-        flex-flow: row wrap;
+        
     }
 
    
@@ -271,7 +204,7 @@ a {
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+    
     }
 
     .populaires-cards a {
@@ -292,7 +225,7 @@ a {
 @media all and (max-width:1200px) {
 
     .lodges-layout {
-        --gap:3rem;
+        --gap:2.5rem;
         flex-direction: column;
     }
 
@@ -315,12 +248,11 @@ a {
      /* Specific responsive CARD  */
     .populaires-cards {
         flex-flow: row wrap;
-        justify-content: space-between;
     }
 
     /* Specific responsive CARD  */
     .populaires-cards .card {
-        width:290px ;
+        width:270px ;
         margin-top: 0;
     }
 
