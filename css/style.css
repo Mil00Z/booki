@@ -322,5 +322,36 @@ a {
         width:80%;
     }
 
+    .search-composant {
+        --body-padding:25px;
+        padding-inline: var(--body-padding);
+    }
+
+   
+    #search-entry{
+        width:100%;
+    }
+
+    #search-validate {
+        width: 50px; 
+        position: relative; 
+        transform: translateX(-8px);
+        color: transparent;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        border-radius: 15px;
+    }
+
+        
+        #search-validate::after{
+            content: "\f002";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:14px;
+            color:var(--white);
+            
+        }
+
+
 
 }
