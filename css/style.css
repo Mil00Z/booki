@@ -279,16 +279,20 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-   body {
-    --body-padding:0;
-   }
+
+    .main-container {
+        --body-padding:0;
+    }
 
    .logo {
         width:120px;
     }
+
     .navbar-app {
         flex-direction: column;
         gap: 2.5rem; 
+        padding-inline:var(--body-padding);
+
     }
 
     .main-nav {
@@ -306,6 +310,16 @@ a {
     .navbar-link.active {
         border-top-color:transparent;
         border-bottom-color: currentColor;
+    }
+
+
+    .hero {
+        --body-padding:25px;
+        padding-inline: var(--body-padding);
+    }
+
+    .hero-title {
+        width:80%;
     }
 
 
