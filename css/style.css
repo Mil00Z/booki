@@ -347,12 +347,14 @@ a {
 
         #search-validate::after{
             content: "\f002";
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size:14px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: var(--fa-style-family-classic);
+            font-size:18px;
             color:var(--white);
-            
         }
 
 
