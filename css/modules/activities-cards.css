@@ -12,10 +12,10 @@
 }
 
 .activities-cards .card-thumbnail {
-    flex-grow:1;
-    height: 85%;
+    /* flex-grow:1; */
+    height: 80%;
 }
 
 .activities-cards .card-title {
-    margin-block: .7rem;
+    /* margin-block: .6rem; */
 }
