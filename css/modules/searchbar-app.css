@@ -50,4 +50,5 @@
     text-align: center;
     border-radius: 0 var(--section-radius) var(--section-radius) 0;
     background-color: var(--main-color);
+    cursor:pointer;
 }
