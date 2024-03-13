@@ -5,17 +5,21 @@
     row-gap: 3rem;
 }
 
+.activities-cards > a {
+    display: inline-block;
+    width: 22%;
+}
+
 .activities-cards .card {
     --paddingCard: 0;
-    width: 22%;
     height: 380px;
 }
 
 .activities-cards .card-thumbnail {
     flex-grow:1;
-    height: 85%;
+    height: 80%;
 }
 
 .activities-cards .card-title {
-    margin-block: .7rem;
+    margin-block: .6rem;
 }
