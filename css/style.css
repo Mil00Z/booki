@@ -215,7 +215,7 @@ a {
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+
     }
 }
 
@@ -322,7 +322,7 @@ a {
     }
 
     .hero-title {
-        width:80%;
+        width:85%;
     }
 
     .search-composant {
@@ -406,13 +406,14 @@ a {
         }
 
         .activities-cards .card-title {
-            margin-block:1rem
+            margin-block:1.2rem;
         }
 
         .main-footer {
             flex-direction: column;
             justify-content: center;
             row-gap: 3rem;
+            padding-top:1.75rem;
         }
 
         .footer-nav {
