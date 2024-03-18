@@ -331,7 +331,7 @@ a {
         flex-direction: column;
         gap: 2rem; 
         padding-inline:var(--body-padding);
-
+        padding-top:var(--padding-common);
     }
 
     .main-nav {
