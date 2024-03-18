@@ -404,6 +404,7 @@ a {
 
         .search-baseline{
             display: flex;
+            align-items: center;
         }
 
         #populaires {
@@ -423,7 +424,10 @@ a {
             --gap:1rem;
         }
 
-        .populaires-cards a,
+        .populaires-cards a {
+            width:100%;
+        }
+
         .populaires-cards .card {
             width:100%;
         }
