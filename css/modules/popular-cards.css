@@ -30,11 +30,11 @@
 
 .populaires-cards > a {
     display: inline-block;
+    width:31%;
 
 }
 
 .populaires-cards .card-content {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
