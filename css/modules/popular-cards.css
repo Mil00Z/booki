@@ -2,7 +2,7 @@
     --gap:33px;
     display: flex;
     flex-direction: column;
-    gap:var(--gap);
+    gap:var(--gap) 0;
 
 }
 
@@ -30,7 +30,7 @@
 
 .populaires-cards > a {
     display: inline-block;
-    width:31%;
+    width:32%;
 
 }
 

@@ -13,10 +13,14 @@
     height:210px;
 }
 
+.lodges-cards .card:hover {
+    --op:.22;
+    transform: translateY(-5px);
+}
+
 .lodges-cards .card-thumbnail {
     height:60%;
 }
-
 
 .lodges-cards .card-title {
     margin-block:.5rem;
