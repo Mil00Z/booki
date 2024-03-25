@@ -1,14 +1,16 @@
 .card {
     --paddingCard:.3rem;
     --card-radius:20px;
+    --op:.1;
     display: flex;
     padding: var(--paddingCard);
     background-color: white;
     border: 1px solid var(--filter-bg-color);
     border-radius: var(--card-radius);
     overflow: hidden;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, var(--op)));
     transition: var(--regTransition);
+    will-change: transform;
 }
 
 .card-row {
