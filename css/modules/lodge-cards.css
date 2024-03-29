@@ -5,12 +5,12 @@
 }
 
 .lodges-cards > a {
-    width:31%;
+    width:30%;
 }
 
 .lodges-cards .card {
     /* width: 260px; */
-    height:210px;
+    height:260px;
 }
 
 .lodges-cards .card:hover {

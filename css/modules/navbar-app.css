@@ -13,18 +13,15 @@
     
 }
 
+
+.navbar-link:hover,
+.navbar-link:focus,
 .navbar-link.active {
     color:var(--main-color);
     border-top-color: currentColor;
 }
 
-.navbar-link:hover,
-.navbar-link:focus {
-    color:var(--debeug);
-    border-bottom-color: currentColor;
-}
-
-.main-nav{
+.main-nav {
     display: flex;
     align-items: center;
     column-gap: calc( 2 * var(--padding-common));
