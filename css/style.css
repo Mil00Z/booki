@@ -348,13 +348,17 @@ a {
         }
     
     .search-link {
-            width: 140px;
+            min-width: 140px;
             padding: 5px;
         }
     
     .search-filters-list {
             gap: .6rem 0 ;
           }
+
+    .search-filters-list > li {
+        width:45%;
+    }
     
     .search-link > .fa-solid {
             padding-right: 10px;
