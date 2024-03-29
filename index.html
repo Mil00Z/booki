@@ -17,14 +17,14 @@
 
 <body class="accueil">
 
-    <wrap-per class="main-container">
+    <wrap-per class="main-container" aria-label="squelette du site">
 
         <header class="">
 
             <div class="navbar-app">
                 <img src="images/logo/Booki.svg" alt="Logo de l'entreprise Booki" title="Logo de l'entreprise Booki" class="logo">
                 <nav class="main-nav">
-                    <a href="#hebergements" class="navbar-link active">Hébergements</a>
+                    <a href="#hebergements" class="navbar-link ">Hébergements</a>
                     <a href="#activities" class="navbar-link">Activités</a>
                 </nav>
             </div>
@@ -36,7 +36,7 @@
                 <span class="hero-title_baseline">En plein centre-ville ou en pleine nature</span>
             </div>
 
-            <search-bar class="search-composant" role="'search">
+            <search-bar class="search-composant" role="'search" aria-label="Zone de recherche de biens">
                 <form class="search-tool">
                     <label class="search-icon" for="search-entry">
                         <i class="fa-solid fa-location-dot"></i>
@@ -63,7 +63,7 @@
                                 Romantique</a>
                         </li>
                         <li>
-                            <a href="#" class="search-link inputs active">
+                            <a href="#" class="search-link inputs">
                                 <i class="fa-solid fa-fire"></i>
                                 Nos pépites</a>
                         </li>
@@ -82,7 +82,7 @@
                 <section id="hebergements" class="block-data">
                     <h2 class="section-title">Hébergements à <span class="hebergements_geoloc">Marseille</span>
                     </h2>
-                    <item-list class="lodges-cards">
+                    <item-list class="lodges-cards" aria-label="liste des biens à louer">
                         <a href="#">
                             <article class="card card-column">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit" class="card-thumbnail">
@@ -206,7 +206,7 @@
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <list-item class="populaires-cards">
+                    <list-item class="populaires-cards" aria-label="liste des biens populaires">
                         <a href="#">
                             <article class="card card-row">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -270,7 +270,7 @@
                 <section id="activities" class="">
                     <h2 class="section-title">Activités à <span class="hebergements_geoloc">Marseille</span>
                     </h2>
-                    <item-list class="activities-cards">
+                    <item-list class="activities-cards" aria-label="liste des activités">
                         <a href="#">
                             <article class="card card-column">
                                     <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port de Marseille" class="card-thumbnail">
@@ -318,7 +318,7 @@
             </div>
         </main>
 
-        <footer class="main-footer block-data">
+        <footer class="main-footer block-data" role="contentinfo">
              <nav class="footer-nav" id="about">
                 <h3 class="nav-title">A propos</h3>
                 <a href="#">Fonctionnement du site</a>
@@ -336,7 +336,7 @@
                 <a href="#">Nous contacter</a>
             </nav>
 
-        <copy-right class="hidden attribution">
+        <copy-right class="hidden attribution" aria-label="Copyright Draft">
             Coded by 
             <a href="https://github.com/Mil00Z">Mil00Z</a>
         </copy-right>
