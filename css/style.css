@@ -402,10 +402,15 @@ a {
 
         .populaires-cards {
             --gap:1rem;
+            flex-direction: column;
         }
 
         .populaires-cards a {
             width:100%;
+        }
+
+        .populaires-cards img {
+            width: 120px;
         }
 
         .populaires-cards .card {
@@ -420,6 +425,13 @@ a {
             --gap: 1.5rem;
         }
 
+        .lodges-cards {
+            flex-direction: column;
+        }
+
+        .lodges-cards > a {
+            width:100%;
+        }
 
         .lodges-cards .card {
             width:100%;
@@ -432,8 +444,14 @@ a {
             max-height: 145px;
         }
 
+        #activities {
+            width:100%;
+        }
+
+
         .activities-cards {
             row-gap:1.5rem;
+            flex-direction: column;
         }
 
         .activities-cards .card {
@@ -441,7 +459,7 @@ a {
         }
 
         .activities-cards > a {
-            width:45%;
+            width:100%;
         }
 
         .activities-cards .card-title {
@@ -451,6 +469,7 @@ a {
         .main-footer {
             row-gap: 3rem;
             padding-top:1.75rem;
+            flex-direction: column;
         }
 
         .footer-nav {
