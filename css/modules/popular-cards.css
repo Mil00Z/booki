@@ -6,8 +6,15 @@
 
 }
 
+.populaires-cards > a {
+    display: inline-block;
+    /* width:32%; */
+
+}
+
 .populaires-cards .card {
-    width: 360px;
+    /* width: 360px; */
+    width:100%
 }
 
 .populaires-title {
@@ -18,7 +25,8 @@
 
 
 .populaires-cards img {
-    width: 120px;
+    /* width: 120px; */
+    width:45%;
     height: 136px;
     object-fit:cover;
     border-top-left-radius: calc( (-1) * var(--paddingCard) + var(--card-radius));
@@ -27,18 +35,11 @@
     border-bottom-right-radius:0;
 }
 
-
-.populaires-cards > a {
-    display: inline-block;
-    width:32%;
-
-}
-
 .populaires-cards .card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 1rem;
+    padding-left: .85rem;
 
 }
 
